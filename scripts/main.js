@@ -9,8 +9,8 @@ myImage.onclick = function() {
       myImage.setAttribute ('src','images/lucas.JPG');
     }
 }
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('h1');
+var myButton = document.getElementById('button');
+var myHeading = document.queryselector('h1');
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
@@ -22,6 +22,6 @@ function setUserName() {
   localStorage.setItem('name', myName);
   myHeading.textContent = 'PROGRAMING IS COOL, ' + myName;
 }
-myButton.onclick = function() {
+myButton.document.onclick = function() {
   setUserName();
 }
